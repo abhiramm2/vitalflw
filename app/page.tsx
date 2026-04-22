@@ -1,14 +1,14 @@
 "use client";
 
 import { Activity, Zap, Calendar, ShieldCheck, Receipt } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Antigravity from "@/components/ui/antigravity";
 
 import Image from "next/image";
 
 export default function ComingSoonPage() {
   // Animation variants
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -19,7 +19,7 @@ export default function ComingSoonPage() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     show: {
       opacity: 1,
