@@ -169,10 +169,10 @@ export default function LandingPage() {
           </nav>
 
           <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
-            <button className={styles.btnNavGhost}>
+            <Link href="/login" className={styles.btnNavGhost}>
               Member Login
               <ArrowRight className={styles.btnArrow} style={{ width: "0.875rem", height: "0.875rem" }} />
-            </button>
+            </Link>
           </motion.div>
         </motion.header>
       </div>
