@@ -1,0 +1,38 @@
+.input {
+  height: 2rem;
+  width: 100%;
+  min-width: 0;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background-color: transparent;
+  padding: 0.25rem 0.625rem;
+  font-size: 1rem;
+  color: inherit;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:focus-visible {
+  border-color: #26A9A3;
+  box-shadow: 0 0 0 3px rgba(38, 169, 163, 0.2);
+}
+
+.input:disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: rgba(226, 232, 240, 0.5);
+  opacity: 0.5;
+}
+
+.input[aria-invalid="true"] {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+@media (min-width: 768px) {
+  .input { font-size: 0.875rem; }
+}
