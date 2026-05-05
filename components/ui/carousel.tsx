@@ -103,7 +103,7 @@ export default function Carousel({
     }
   }, [itemsForRender.length, loop, position]);
 
-  const effectiveTransition = isJumping ? { duration: 0 } : SPRING_OPTIONS;
+  const effectiveTransition: any = isJumping ? { duration: 0 } : SPRING_OPTIONS;
 
   const handleAnimationStart = () => {
     setIsAnimating(true);
